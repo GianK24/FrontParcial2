@@ -1,3 +1,7 @@
+**Nombre:** Gian Karlo Lanziano Baracaldo
+
+**Código de estudiante:** 202424438
+
 # FrontParcial2
 
 ## Ejecutar el back
