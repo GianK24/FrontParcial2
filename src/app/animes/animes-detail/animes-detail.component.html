@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row align-items-center mb-3">
+    <div class="col">
+      <p class="h3 mb-0">{{ animeDetail.name }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <dl>
+        <div class="row">
+          <div class="col-md-6">
+            <dt class="fw-bold">Seasons</dt>
+            <dd>{{ animeDetail.seasons }}</dd>
+          </div>
+          <div class="col-md-6">
+            <dt class="fw-bold">Rating</dt>
+            <dd>{{ animeDetail.rating }}</dd>
+          </div>
+        </div>
+        <hr />
+        <dt class="fw-bold">Description</dt>
+        <dd>{{ animeDetail.description }}</dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
+</div>

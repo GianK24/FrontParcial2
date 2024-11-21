@@ -1,0 +1,36 @@
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row align-items-center mb-3">
+        <div class="col">
+          <h3 class="h3 mb-0">Animes</h3>
+        </div>
+      </div>
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Seasons</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let anime of animes" (click)="onSelected(anime)" class="cursor-pointer">
+            <td>{{ anime.name }}</td>
+            <td>{{ anime.seasons }}</td>
+            <td>{{ anime.rating }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Best Anime Rating: {{ getBestAnime() }}</p>
+    </div>
+    
+    <div class="col-md-6">
+      <div *ngIf="selectedAnime" class="card">
+        <div class="card-body">
+          <app-animes-detail [animeDetail]="selectedAnime"></app-animes-detail>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="form-container d-flex justify-content-between align-items-center">
+  <div class="col-auto me-4">
+    <img
+      class="img-fluid rounded shadow-lg"
+      src="anime.png"
+      style="max-width: 350px"
+    />
+  </div>
+  <div class="col">
+    <form
+      (ngSubmit)="sendPrompt()"
+      class="border p-4 rounded-3"
+      style="width: 60%"
+    >
+      <div class="mb-3">
+        <label for="prompt" class="form-label fw-bold">Prompt:</label>
+        <input
+          type="text"
+          name="prompt"
+          [(ngModel)]="prompt"
+          class="form-control"
+          placeholder="Enter your prompt here"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-dark w-100">Send</button>
+    </form>
+  </div>
+</div>
